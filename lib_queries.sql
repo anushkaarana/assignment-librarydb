@@ -84,6 +84,7 @@ SELECT u.issued_to, u.Phone_no, u.Email_address, d.overdue_amount
 FROM usertb u
 RIGHT JOIN overdues d ON u.Email_address = d.email;
 
+DROP TABLE overdues;
 
 
 
