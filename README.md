@@ -47,3 +47,104 @@
 
   ***Output:***
   ![screenshot of select query output.](https://github.com/anushkaarana/assignment-librarydb/blob/main/output/3.png)
+
+
+- ***UPDATE & WHERE Query***
+  <p> UPDATE db_library.usertb <br>
+  SET issue_date='2024-09-29', Return_date='2024-10-14', Overdue=0 <br>
+  WHERE issued_to='Emily White';
+  </p>
+
+
+  ***Output:***
+  ![screenshot of update query output.](https://github.com/anushkaarana/assignment-librarydb/blob/main/output/4.png)
+
+- ***ALTER Query***
+  <p>
+    ALTER table db_library.usertb <br>
+    CHANGE Return_date Submission_date date;
+  </p>
+
+  ***Output:***
+  ![screenshot of alter query output.](https://github.com/anushkaarana/assignment-librarydb/blob/main/output/5.png)
+
+- ***ORDER BY Query***
+  <p>
+    SELECT issued_to, Phone_no, Email_address <br>
+    FROM db_library.usertb <br>
+    ORDER BY Overdue ASC; <br>
+  </p>
+
+   ***Output:***
+  ![screenshot of order by query output.](https://github.com/anushkaarana/assignment-librarydb/blob/main/output/6.png)
+
+
+- ***INNER JOIN Query***
+  <p>
+    SELECT u.issued_to, u.Phone_no, u.Email_address, d.overdue_amount <br>
+    FROM usertb u <br>
+    INNER JOIN overdues d ON u.Email_address = d.email; <br>
+  </p>
+
+  ***Output:***
+  ![screenshot of inner join query output.](https://github.com/anushkaarana/assignment-librarydb/blob/main/output/8.png)
+
+
+- ***LEFT JOIN Query***
+  <p>
+    SELECT u.issued_to, u.Phone_no, u.Email_address, d.overdue_amount <br>
+    FROM usertb u <br>
+    LEFT JOIN overdues d ON u.Email_address = d.email; <br>
+  </p>
+
+   ***Output:***
+  ![screenshot of left join query output.](https://github.com/anushkaarana/assignment-librarydb/blob/main/output/9.png)
+
+
+- ***RIGHT JOIN Query***
+  <p>
+    SELECT u.issued_to, u.Phone_no, u.Email_address, d.overdue_amount <br>
+    FROM usertb u <br>
+    RIGHT JOIN overdues d ON u.Email_address = d.email; <br>
+  </p>
+
+   ***Output:***
+  ![screenshot of right join query output.](https://github.com/anushkaarana/assignment-librarydb/blob/main/output/10.png)
+
+
+- ***FULL OUTER JOIN Query***
+  <p>
+    SELECT u.issued_to, u.Phone_no, u.Email_address, d.overdue_amount <br>
+    FROM usertb u <br>
+    LEFT JOIN overdues d ON u.Email_address = d.email <br>
+    UNION <br>
+    SELECT u.issued_to, u.Phone_no, u.Email_address, d.overdue_amount <br>
+    FROM usertb u <br> 
+    RIGHT JOIN overdues d ON u.Email_address = d.email; <br>
+  </p>
+
+  ***Output:***
+  ![screenshot of full outer join query output.](https://github.com/anushkaarana/assignment-librarydb/blob/main/output/11.png)
+
+
+- ***DROP Query***
+  <p> DROP TABLE overdues;</p>
+
+  ***Output:***
+  ![screenshot of drop query output.](https://github.com/anushkaarana/assignment-librarydb/blob/main/output/12.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
