@@ -1,11 +1,11 @@
 # SQl Assignment- library database
 ## Creating a library database and performing various queries
-- ***Create Database*** (CREATE & USE query)
-  CREATE DATABASE db_library;
-  USE db_library;
-  create table db_library.usertb(
-  ISBN varchar(50),
-  Publisher_name varchar(100),
+- ***Create Database*** (CREATE & USE query) <br>
+  CREATE DATABASE db_library; <br>
+  USE db_library;  
+  create table db_library.usertb(  
+  ISBN varchar(50),  
+  Publisher_name varchar(100),  
   Publication_no varchar(50),
   Book_title varchar(50),
   Book_no int,
