@@ -1,21 +1,21 @@
 # SQl Assignment- library database
 ## Creating a library database and performing various queries
 - ***Create Database (CREATE & USE query)***   
-  CREATE DATABASE db_library;  
-  USE db_library;  
-  create table db_library.usertb(  
-  ISBN varchar(50),  
-  Publisher_name varchar(100),  
-  Publication_no varchar(50),  
-  Book_title varchar(50),  
-  Book_no int,  
-  issue_date date,  
-  issued_to varchar(50),  
-  Phone_no varchar(20),  
-  Email_address varchar(50),  
-  Return_date date,  
-  Overdue int  
-  ) 
+  <p>CREATE DATABASE db_library;  <br>
+  USE db_library;  <br>
+  create table db_library.usertb(  <br>
+  ISBN varchar(50),  <br>
+  Publisher_name varchar(100),  <br>
+  Publication_no varchar(50), <br> 
+  Book_title varchar(50),  <br>
+  Book_no int,<br>  
+  issue_date date,  <br>
+  issued_to varchar(50),  <br>
+  Phone_no varchar(20),<br>  
+  Email_address varchar(50), <br> 
+  Return_date date, <br> 
+  Overdue int <br> 
+  ) </p>
 
   ***Output:***
   ![screenshot of database creation output.](https://github.com/anushkaarana/assignment-librarydb/blob/main/output/1.png)
