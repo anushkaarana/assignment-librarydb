@@ -1,6 +1,6 @@
 # SQl Assignment- library database
 ## Creating a library database and performing various queries
-- ***Create Database (CREATE & USE query)*** 
+- ***Create Database (CREATE & USE query)***   
   CREATE DATABASE db_library;  
   USE db_library;  
   create table db_library.usertb(  
