@@ -36,6 +36,14 @@
   <p>insert into db_library.usertb(ISBN,Publisher_name,Publication_no,Book_title,Book_no,issue_date,issued_to,Phone_no,Email_address,Return_date,Overdue) <br>
   values ('978-1503290563','CreateSpace','1115','Pride and Prejudice',1005,'2024-09-20','Michael Green','555-6785','michael.green@example.com','2024-10-04',3);</p>
 
+
+- ***SELECT Query***
+  <p> SELECT * from db_library.usertb; </p>
+
+  ***Output:***
+  ![screenshot of select query output.](https://github.com/anushkaarana/assignment-librarydb/blob/main/output/3.png)
+  
+
   <p>insert into db_library.usertb(ISBN,Publisher_name,Publication_no,Book_title,Book_no,issue_date,issued_to,Phone_no,Email_address,Return_date,Overdue) <br>
   values ('978-0060850524','Harper Perennial Modern Classics','1117','Brave New World',1007,'2024-10-10','Brian Gray','555-9876','brian.gray@example.com','2024-10-24',0);</p>
 
